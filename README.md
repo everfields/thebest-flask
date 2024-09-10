@@ -51,3 +51,32 @@ Returns a simple message:
 **Response:**
 ```plaintext
 Hello, World!
+```
+
+### 2. `POST /chat`
+Send a prompt to the OpenAI API and receive a response.
+
+**Request:**
+```json
+{
+  "prompt": "What is the best fruit?"
+}
+```
+
+**Response:**
+```json
+{
+  "result": "Mango"
+}
+```
+
+### 3. `GET /health`
+A simple health check endpoint that returns:
+
+**Response:**
+```plaintext
+OK
+```
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
